@@ -131,19 +131,6 @@
       padding: 72px 0 46px;
     }
 
-    .tagline {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: #18130a;
-      background: linear-gradient(135deg, #fff2b8, #ffcb45);
-      padding: 10px 15px;
-      border-radius: 999px;
-      font-weight: 900;
-      box-shadow: 0 12px 30px rgba(255, 203, 69, 0.22);
-      margin-bottom: 22px;
-    }
-
     h1 {
       font-family: var(--font-display);
       font-weight: 700;
@@ -168,11 +155,12 @@
       margin-bottom: 30px;
     }
 
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      align-items: center;
+    .hero-image {
+      display: block;
+      width: min(100%, 760px);
+      max-height: 520px;
+      object-fit: contain;
+      margin: 12px auto 0;
     }
 
     .btn {
@@ -199,78 +187,6 @@
 
     .btn:hover {
       transform: translateY(-3px);
-    }
-
-    .hero-card {
-      position: relative;
-      min-height: 440px;
-      border-radius: 40px;
-      padding: 28px;
-      background: linear-gradient(145deg, rgba(255,255,255,0.18), rgba(255,255,255,0.07));
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-    }
-
-    .hero-card::before {
-      content: "";
-      position: absolute;
-      inset: -80px;
-      background: conic-gradient(from 160deg, transparent, rgba(255,203,69,0.55), rgba(255,95,126,0.45), transparent 70%);
-      animation: spin 10s linear infinite;
-      opacity: 0.5;
-    }
-
-    .hero-card-inner {
-      position: relative;
-      height: 100%;
-      min-height: 384px;
-      border-radius: 30px;
-      padding: 28px;
-      background: rgba(15, 16, 32, 0.82);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      display: grid;
-      align-content: space-between;
-    }
-
-    .big-snack {
-      display: grid;
-      place-items: center;
-      width: min(100%, 260px);
-      margin: 12px auto 8px;
-      filter: drop-shadow(0 28px 36px rgba(0, 0, 0, 0.35));
-      animation: float 3.5s ease-in-out infinite;
-    }
-
-    .big-snack svg {
-      width: 100%;
-      height: auto;
-      overflow: visible;
-    }
-
-    .mini-stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-    }
-
-    .stat {
-      padding: 16px;
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.09);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .stat strong {
-      display: block;
-      font-size: 1.25rem;
-      margin-bottom: 4px;
-    }
-
-    .stat span {
-      color: var(--muted);
-      font-size: 0.82rem;
-      font-weight: 700;
     }
 
     section {
@@ -499,18 +415,8 @@
       transform: translateX(-50%) translateY(0);
     }
 
-    @keyframes float {
-      0%, 100% { transform: translateY(0) rotate(-2deg); }
-      50% { transform: translateY(-18px) rotate(3deg); }
-    }
-
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-
     @media (max-width: 900px) {
       .hero {
-        grid-template-columns: 1fr;
         min-height: auto;
       }
 
@@ -545,14 +451,6 @@
 
       .hero {
         padding-top: 48px;
-      }
-
-      .hero-card-inner {
-        min-height: 320px;
-      }
-
-      .mini-stats {
-        grid-template-columns: 1fr;
       }
 
       .grid {
@@ -594,6 +492,7 @@
         <h1><span class="gradient-text">Snack Shack</span></h1>
         <p>Items and prices change weekly.</p>
       </div>
+      <img class="hero-image" src="images/hero.png" alt="Assorted snack bags and loose snacks" />
     </section>
 
     <section id="menu" class="container">
