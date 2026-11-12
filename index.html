@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,300..700,0..1,0..1&display=swap" rel="stylesheet" />
   <style>
     :root {
       --bg: #0f1020;
@@ -32,6 +33,23 @@
     button,
     input {
       font: inherit;
+    }
+
+    .material-symbols-rounded {
+      font-family: "Material Symbols Rounded";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 1.2rem;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: "liga";
+      -webkit-font-smoothing: antialiased;
+      font-variation-settings: "FILL" 0, "wght" 550, "GRAD" 0, "opsz" 24;
     }
 
     body {
@@ -106,6 +124,11 @@
       transform: rotate(-7deg);
     }
 
+    .logo-badge .material-symbols-rounded {
+      color: #18130a;
+      font-size: 1.55rem;
+    }
+
     .nav-links {
       display: flex;
       align-items: center;
@@ -115,9 +138,16 @@
     }
 
     .nav-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
       padding: 10px 14px;
       border-radius: 999px;
       transition: 0.2s ease;
+    }
+
+    .nav-icon {
+      font-size: 1.1rem;
     }
 
     .nav-links a:hover {
@@ -388,6 +418,13 @@
       font-size: 1.2rem;
     }
 
+    .section-icon {
+      color: var(--accent);
+      font-size: 1.25rem;
+      vertical-align: -3px;
+      margin-right: 4px;
+    }
+
     .info-card p {
       color: var(--muted);
       line-height: 1.6;
@@ -479,12 +516,12 @@
   <header>
     <div class="container nav">
       <a class="logo" href="#top" aria-label="Snack Shack home">
-        <span class="logo-badge">🍿</span>
+        <span class="logo-badge"><span class="material-symbols-rounded" aria-hidden="true">fastfood</span></span>
         <span>Snack Shack</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#menu">Menu</a>
-        <a href="#visit">Pickup</a>
+        <a href="#menu"><span class="material-symbols-rounded nav-icon" aria-hidden="true">restaurant_menu</span>Menu</a>
+        <a href="#visit"><span class="material-symbols-rounded nav-icon" aria-hidden="true">location_on</span>Pickup</a>
       </nav>
     </div>
   </header>
@@ -527,7 +564,7 @@
         <p>Pickup is at the main quad during lunch hours. Payment is by cash.</p>
       </div>
       <div class="info-card">
-        <h3>📍 Location</h3>
+        <h3><span class="material-symbols-rounded section-icon" aria-hidden="true">location_on</span>Location</h3>
         <p>The main quad during lunch hours.</p>
       </div>
     </section>
