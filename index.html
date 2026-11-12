@@ -591,19 +591,20 @@
   <main id="top">
     <section class="hero container">
       <div>
-        <span class="tagline">👩‍🍳 Built for Campus. Made for Lunch.</span>
-        <h1>Better Snacks. Faster Lunch. <span class="gradient-text">Snack Shack</span>.</h1>
+        <span class="tagline">👩‍🍳 A convenient way to find Mia’s current menu before lunch.</span>
+        <h1>Find the snacks you want before lunch at <span class="gradient-text">Snack Shack</span>.</h1>
         <p class="client-note">
-          <strong>For our client, Mia:</strong> Mia runs Snack Shack, a student snack business at her high school.
-          The school board won't let her put up flyers on campus, and her menu and prices change every week.
+          <strong>Snack Shack is run by Mia.</strong> She operates this student snack business at her high school.
+          Because the school board does not allow flyers on campus and the menu changes every week, students need
+          a reliable place to see the current offerings and prices.
         </p>
         <p>
-          A website works better than posting flyers. Mia can update what she sells without reprinting anything,
-          and students can check snacks and prices on their phones before lunch instead of hunting for a paper sign.
+          This website gives Mia a place to update the menu without reprinting flyers. Students can check the available
+          snacks and prices on their phones before lunch, so they know what to bring and where to find her.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#menu">See the Menu</a>
-          <a class="btn btn-secondary" href="#visit">Find Us Today</a>
+          <a class="btn btn-primary" href="#menu">Browse the menu</a>
+          <a class="btn btn-secondary" href="#visit">See where to find us</a>
         </div>
       </div>
 
@@ -631,9 +632,9 @@
             </svg>
           </div>
           <div class="mini-stats">
-            <div class="stat"><strong>15+</strong><span>More Snacks</span></div>
-            <div class="stat"><strong>$1+</strong><span>Better Deals</span></div>
-            <div class="stat"><strong>Fast</strong><span>Less Waiting</span></div>
+            <div class="stat"><strong>15+</strong><span>snack options are available.</span></div>
+            <div class="stat"><strong>$1</strong><span>is the starting price.</span></div>
+            <div class="stat"><strong>Fast</strong><span>pickup is available.</span></div>
           </div>
         </div>
       </aside>
@@ -642,7 +643,7 @@
     <section id="menu" class="container">
       <div class="section-heading">
         <div>
-          <h2>Today's Menu. Fresh Picks. Fair Prices.</h2>
+          <h2>See what is available today.</h2>
         </div>
         <p>Mia's weekly snack lineup is below. Search or filter to see what's available before you head to the table.</p>
       </div>
@@ -665,14 +666,14 @@
 
     <section id="how" class="container">
       <div class="section-heading">
-        <h2>Simple Flow. Clear Steps. Zero Confusion.</h2>
+        <h2>Here is how ordering works.</h2>
         <p>Mia needed something students could check anytime, not another flyer that goes out of date by Friday.</p>
       </div>
       <div class="info-cards">
         <article class="info-card">
           <div class="icon">🔎</div>
           <h3>Browse the Menu</h3>
-          <p>Current Options. Clear Prices. Ready Before Lunch.</p>
+          <p>You can review the current menu and prices before lunch.</p>
         </article>
         <article class="info-card">
           <div class="icon">🧾</div>
@@ -682,43 +683,43 @@
         <article class="info-card">
           <div class="icon">🏫</div>
           <h3>Pick Up on Campus</h3>
-          <p>Find the club table during posted hours and grab your snacks.</p>
+          <p>Find the club table during the posted hours and pick up your snacks.</p>
         </article>
       </div>
     </section>
 
     <section id="visit" class="container">
       <div class="section-heading">
-        <h2>Easy Location. Fast Pickup. Real Snacks.</h2>
+        <h2>Find Snack Shack during lunch.</h2>
         <p>Mia sells snacks at lunch near the main quad. Proceeds help fund school activities.</p>
       </div>
       <div class="info-card">
-        <h3>📍 Visit Info</h3>
-        <p>Main Quad. Lunch Hours. Cash Only.</p>
+        <h3>📍 Where to find us</h3>
+        <p>Snack Shack is at the main quad during lunch hours, and payment is by cash.</p>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container">Snack Shack. Built for Mia. Campus snacks without the flyer mess.</div>
+    <div class="container">Snack Shack gives Mia a simple way to share her current menu with students on campus.</div>
   </footer>
 
-  <div class="toast" id="toast">Added to your snack list!</div>
+  <div class="toast" id="toast">The item has been added to your snack list.</div>
 
   <script>
     const snacks = [
-      { name: "Hot Cheetos", category: "Chips", price: 1.50, emoji: "🌶️", description: "Big Crunch. Real Heat. Instant Energy.", glow: "rgba(255,95,126,0.35)" },
+      { name: "Hot Cheetos", category: "Chips", price: 1.50, emoji: "🌶️", description: "These chips have a crunchy texture and a noticeable level of heat.", glow: "rgba(255,95,126,0.35)" },
       { name: "Nacho Chips", category: "Chips", price: 1.25, emoji: "🧀", description: "Classic cheesy chips for a quick bite.", glow: "rgba(255,203,69,0.35)" },
-      { name: "Pretzels", category: "Chips", price: 1.00, emoji: "🥨", description: "Salty Snack. Easy Share. No Mess.", glow: "rgba(255,203,69,0.24)" },
-      { name: "Chocolate Bar", category: "Candy", price: 1.50, emoji: "🍫", description: "Sweet fuel for long class days.", glow: "rgba(160,95,55,0.35)" },
-      { name: "Gummy Bears", category: "Candy", price: 1.25, emoji: "🐻", description: "Soft Bites. Bright Flavors. Pure Fun.", glow: "rgba(52,211,153,0.25)" },
-      { name: "Sour Belts", category: "Candy", price: 1.25, emoji: "🍬", description: "Tangy candy with a sugar kick.", glow: "rgba(255,95,126,0.28)" },
-      { name: "Water Bottle", category: "Drinks", price: 1.00, emoji: "💧", description: "Cold Water. Clear Focus. Ready Again.", glow: "rgba(96,165,250,0.35)" },
-      { name: "Lemonade", category: "Drinks", price: 1.75, emoji: "🍋", description: "Bright, refreshing, and ice cold.", glow: "rgba(255,203,69,0.35)" },
-      { name: "Iced Tea", category: "Drinks", price: 1.75, emoji: "🧋", description: "Smooth tea for a chill afternoon.", glow: "rgba(52,211,153,0.25)" },
-      { name: "Granola Bar", category: "Healthy", price: 1.25, emoji: "🌾", description: "Lighter Bite. Solid Crunch. Still Filling.", glow: "rgba(52,211,153,0.3)" },
-      { name: "Fruit Cup", category: "Healthy", price: 2.00, emoji: "🍓", description: "Fresh and sweet when you want balance.", glow: "rgba(255,95,126,0.32)" },
-      { name: "Popcorn", category: "Deals", price: 1.00, emoji: "🍿", description: "A classic campus snack for only a buck.", glow: "rgba(255,203,69,0.35)" }
+      { name: "Pretzels", category: "Chips", price: 1.00, emoji: "🥨", description: "These salty pretzels are easy to share and convenient to eat.", glow: "rgba(255,203,69,0.24)" },
+      { name: "Chocolate Bar", category: "Candy", price: 1.50, emoji: "🍫", description: "This chocolate bar provides a sweet snack during a long class day.", glow: "rgba(160,95,55,0.35)" },
+      { name: "Gummy Bears", category: "Candy", price: 1.25, emoji: "🐻", description: "These soft gummy candies come in a variety of bright flavors.", glow: "rgba(52,211,153,0.25)" },
+      { name: "Sour Belts", category: "Candy", price: 1.25, emoji: "🍬", description: "These sour belts have a tangy flavor and a sweet finish.", glow: "rgba(255,95,126,0.28)" },
+      { name: "Water Bottle", category: "Drinks", price: 1.00, emoji: "💧", description: "A cold bottle of water is available when you need a refreshing drink.", glow: "rgba(96,165,250,0.35)" },
+      { name: "Lemonade", category: "Drinks", price: 1.75, emoji: "🍋", description: "This lemonade is bright, refreshing, and served cold.", glow: "rgba(255,203,69,0.35)" },
+      { name: "Iced Tea", category: "Drinks", price: 1.75, emoji: "🧋", description: "This iced tea has a smooth flavor that suits a relaxed afternoon.", glow: "rgba(52,211,153,0.25)" },
+      { name: "Granola Bar", category: "Healthy", price: 1.25, emoji: "🌾", description: "This granola bar offers a lighter snack with a satisfying crunch.", glow: "rgba(52,211,153,0.3)" },
+      { name: "Fruit Cup", category: "Healthy", price: 2.00, emoji: "🍓", description: "This fruit cup is fresh and sweet when you want a lighter option.", glow: "rgba(255,95,126,0.32)" },
+      { name: "Popcorn", category: "Deals", price: 1.00, emoji: "🍿", description: "This classic campus snack is available for one dollar.", glow: "rgba(255,203,69,0.35)" }
     ];
 
     const categories = ["All", ...new Set(snacks.map(item => item.category))];
@@ -796,13 +797,13 @@
       const item = snacks.find(snack => snack.name === button.dataset.name);
       cart.push(item);
       updateCart();
-      showToast(`${item.name} added!`);
+      showToast(`${item.name} has been added to your snack list.`);
     });
 
     clearCart.addEventListener("click", () => {
       cart = [];
       updateCart();
-      showToast("Snack list cleared.");
+      showToast("Your snack list has been cleared.");
     });
 
     renderFilters();
